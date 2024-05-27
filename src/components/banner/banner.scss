@@ -1,0 +1,32 @@
+.banner{
+    img{
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .sec{
+        padding: 0 25   px;
+        .ban{
+            display: flex;
+            .details{
+                padding: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2{
+                    font-size: 4em;
+                }
+                p{
+                    font-size: 1.5em;
+                    width: 80%;
+                }
+            }
+        }
+        hr{
+            height: 10px;
+            border: none;
+            background-color: lightgray;
+        }
+    }
+}

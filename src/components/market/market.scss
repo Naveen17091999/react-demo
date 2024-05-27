@@ -1,0 +1,14 @@
+.courses{
+    padding:50px;
+    h3{
+        font-size: 2em;
+    }
+    
+    .course{
+        display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    }
+}
