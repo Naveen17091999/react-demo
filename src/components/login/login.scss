@@ -1,0 +1,30 @@
+.login {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    background-color: rgb(189, 123, 255);
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 25px;
+
+        h2{
+            font-size: 2em;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            border-bottom: 2px solid gray;
+        }
+
+        .submit{
+            border: none;
+            background-color: rgb(118, 118, 241);
+        }
+    }
+}

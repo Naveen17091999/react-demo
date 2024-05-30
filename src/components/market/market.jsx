@@ -423,7 +423,7 @@ function Courses() {
 
                 {
                     data.map((data, index) => (
-                        <Card data={data} />
+                        <Card data={data} key={index}/>
                     ))
                 }
             </div>

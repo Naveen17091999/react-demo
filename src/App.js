@@ -9,6 +9,7 @@ import Cart from './components/cart/Cart';
 import Notification from './components/notification/Notification';
 import Profile from './components/profile/Profile';
 import Login from './components/login/Login';
+import Register from './components/register/Register';
 
 
 function Layout() {
@@ -62,6 +63,10 @@ function App() {
           path:'login',
           element:<Login/>
         },
+        {
+          path:"register",
+          element:<Register/>
+        }
       ]
     }
   ])

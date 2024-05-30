@@ -1,0 +1,38 @@
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-color: rgb(119, 198, 255);
+
+    .details {
+        background-color: aliceblue;
+        padding: 20px;
+        border-radius: 20px;
+        width: 50%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        table{
+            width: 100%;
+            thead{
+                tr{
+                    display: flex;
+                    gap: 50px;
+                    justify-content: space-between;
+                }
+            }
+
+            tbody{
+                row-gap: 20px;
+                tr{
+                    display: flex;
+                    gap: 50px;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
