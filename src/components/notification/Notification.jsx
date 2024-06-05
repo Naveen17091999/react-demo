@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./notification.scss"
-
+import EditIcon from '@mui/icons-material/Edit';
+import DeleteIcon from '@mui/icons-material/Delete';
+// import { DataGrid, GridColDef } from '@mui/x-data-grid';
 const Notification = () => {
     const [detail, setDetails] = useState([])
     useEffect(() => {
@@ -44,8 +46,8 @@ const Notification = () => {
                             <td>{data.email}</td>
                             <td>{data.password}</td>
                             <td>
-                                <button>update</button>
-                                <button>delete</button>
+                                <button><EditIcon /></button>
+                                <button><DeleteIcon/></button>
                             </td>
                         </tr>
                     ))}

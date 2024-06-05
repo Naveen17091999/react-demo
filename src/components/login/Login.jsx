@@ -6,10 +6,11 @@ import { Link, useNavigate } from "react-router-dom"
 const Login = () => {
     const navigate = useNavigate()
 
-    const [details, setDetails] = useState({
-        email: "",
-        password: ""
-    })
+    let details = {}
+    // const [details, setDetails] = useState({
+    //     email: "",
+    //     password: ""
+    // })
 
     const [error, setError] = useState("")
 
@@ -28,7 +29,10 @@ const Login = () => {
         console.log(res.data);
         if (res.status === 200 && res.data === "User logged.") {
             navigate('/')
-        }else{
+        }else if(res.data === "User does not exist."){
+            navigate('/register')
+        }
+        else{
             setError(res.data)
         }
     }
@@ -36,7 +40,9 @@ const Login = () => {
     const handleChange = (event) => {
         let value = event.target.value
         let name = event.target.name
-        setDetails({ ...details, [name]: value })
+        // setDetails({ ...details, [name]: value })
+        details={ ...details, [name]: value }
+        console.log(details);
     }
     return (
         <div className="login">
